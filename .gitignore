@@ -4,21 +4,27 @@ __pycache__/
 *.egg-info/
 venv/
 .venv/
+
+# Database files and local backups
 *.db
 *.db.backup-*
 *.db-journal
 *.db-wal
 *.db-shm
+backups/
 
-# Photos (user uploaded content)
+# Photo uploads
 election-form/backend/photos/*
 !election-form/backend/photos/.gitkeep
+photos/*
+!photos/.gitkeep
 
 # Node
 node_modules/
 frontend/node_modules/
 election-form/frontend/node_modules/
 frontend/dist/
+frontend/build/
 election-form/frontend/build/
 
 # Environment files
@@ -26,14 +32,13 @@ election-form/frontend/build/
 .env.*
 !.env.example
 
-# IDE
+# IDE and OS
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs and temporary files
 *.log
 *.tmp
+*.swp

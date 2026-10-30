@@ -1,0 +1,40 @@
+# Python virtual environment
+venv/
+
+# Database file
+*.db
+*.db.backup-*
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Photo uploads
+photos/*
+!photos/.gitkeep
+
+# Local backups
+backups/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Node modules (if any)
+node_modules/
